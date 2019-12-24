@@ -7,27 +7,24 @@ Swift local storage manager (easy use NSUserDefaults)
 
 Вы можете дополнить менеджер типами данных которые нужны именно вам в проекте. 
 
-
 Пример сохранения
-
+---
 StorageManager.shared.setBool(true, for: .example1)
 
 StorageManager.shared.setInt(123, for: .example2)
 
 StorageManager.shared.setString("Hello world!", for: .example3)
 
-
 Пример чтения
-
+---
 StorageManager.shared.valueBool(.exmaple1)
 
 StorageManager.shared.valueInt(.exmaple2)
 
 StorageManager.shared.valueStr(.exmaple3)
 
-
 Пример использования
-
+---
 if StorageManager.shared.valueBool(.exmaple1) {
     // что делать если значение true
 }
