@@ -1,31 +1,31 @@
 # StorageManager
 Swift local storage manager (easy use NSUserDefaults)
 
-Один из мендежеров которые я использую в своих проектах.
+is One of the managers that I use in my projects.
 
-Данный менеджер облегчает работу с NSUserDefaults (не то чтобы она была сложной), но делает работу удобнее.
+This Manager makes it easier to work with NSUserDefaults (not that it is complicated), but it makes the work easier.
 
-Вы можете дополнить менеджер типами данных которые нужны именно вам в проекте. 
+You can add data types to the Manager that you need in the project.
 
-Пример сохранения
+Example of saving
 ---
-StorageManager.shared.setBool(true, for: .example1)
+StorageManager.shared.setBool(true, for:. example1)
 
-StorageManager.shared.setInt(123, for: .example2)
+StorageManager.shared.setInt(123, for:. example2)
 
-StorageManager.shared.setString("Hello world!", for: .example3)
+StorageManager.shared. setString("Hello world!", for:. example3)
 
-Пример чтения
+reading Example
 ---
 StorageManager.shared.valueBool(.exmaple1)
 
 StorageManager.shared.valueInt(.exmaple2)
 
-StorageManager.shared.valueStr(.exmaple3)
+StorageManager.shared.valueStr (. exmaple3)
 
-Пример использования
+usage Example
 ---
-if StorageManager.shared.valueBool(.exmaple1) {
-    // что делать если значение true
+if StorageManager.shared.valueBool (. exmaple1) {
+//what to do if the value is true
 }
 
